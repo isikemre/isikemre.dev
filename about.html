@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Emre Isik</title>
+
+    <meta name="description" content="You are visiting my personal website. Here are just some informations about me. Don't be shy, visit the site." />
+    <meta name="keywords" content="emre, isik, personal website, portfolio, mreturkey, turkey, germany" />
+    <meta name="twitter:site" content="@mreturkey" />
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131463689-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-131463689-1');
+    </script>
+
+</head>
+
+<body>
+
+    <div class="background-black"></div>
+
+    <header>
+        <a class="text-logo" href="/">isikemre.de</a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/"><span>&larr; Back</span></a>
+                </li>
+                <li>
+                    <a href="projects.html">Projects</a>
+                </li>
+                <li>
+                    <a href="/about.html"><span>About</span></a>
+                </li>
+                <li>
+                    <span class="tippy-me-contact">Contact</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section-projects background-grey">
+        
+        <h1><span class="weight-normal">guest@isikemre.dev/about$</span><br> Here's is my small bio</h1>
+        
+        <hr>
+
+        <h4 class="font-courier">I think you already have noticed.</h4>
+        <h1 class="font-courier" style="margin-top: -20px">My name is Emre Isik,</h3>
+        
+        <p class="about-me-text">
+            Yes, we don't know each other. And that's quite normal, too.<br>
+            So I'm gonna tell you about me as much as I can.<br>
+            I was born in <b>Mönchengladbach, Germany</b> and lived there for 17 years.<br>
+            And there (Germany) I finished my school (Realschule) before I moved to <b>Turkey</b>.<br>
+            You may have noticed that I don't have any university degree.<br>
+            And yes, I know that this is often required to get a job in computer science.<br>
+            Let me tell a small story about me, first.<br><br>
+            
+            In my childhood, my father was interested in web development and bought many books
+            about HTML, CSS and JavaScript and he also bought me some, too, because I had the same interest.
+            I started to read and learn and read and learn so many book as I can, until I was
+            fascinated by everything about software engineering and computer science. With 13, I
+            already could write a website in PHP and HTML and some CSS/JavaScript to make it
+            more beautiful. With 14/15, I started to learn Java to write minecraft plugins (in Java)
+            with my friend for his server. And this small footsteps, were my first footsteps to the world
+            of computer science and software engineering. <br><br>
+            
+            To come back to my first words. Yeah, I don't have any university degree. But I have a lot of experience, then back then after my first small footsteps, I worked together with my father for his web-design company and then later I searched for freelance jobs and I get a lot. 
+            Since 2015 I work as a freelancer (part time). My old and new clients are verry happy to find me.<br>
+            All my clients later gave me a follow-up project. Some of them still do that.
+            This all is a great thing, because I can learn more and more and give that learned stuff back to all of them in a form of experience.<br><br>
+            
+            Today, I have found my strengths in DevOps, because I love both parts.<br>
+            Software Development and IT Operations. Currently I am working with Rancher 2.0 and Kubernetes to manage all
+            project's deployments and their security. In CI/CD, I automated all things from the simple commit until the deployment in to the test, staging or production environment succeeds.
+            Including all tests and reports. Including all logging and monitoring management after deployment.<br>
+            Everything went through my hands.<br><br>
+
+            By the way, in parallel, I am learning Golang, because you write less, fast & secure code and then compile to native and (the best part)
+            it provides cross-platform support. What do you want more?
+        </p>
+
+    </section>
+
+    <div id="contact-text" style="display: none;">
+        <p>
+            You can contact me via E-Mail.<br>
+            <i>e.isik27@gmail.com</i>
+        </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/tippy.js@3/dist/tippy.all.min.js"></script>
+
+    <script type="text/javascript">
+
+        tippy('.tippy-me-contact', {
+            content: document.getElementById('contact-text').innerHTML,
+            delay: 100,
+            arrow: true,
+            allowHTML: true,
+            arrowType: 'round',
+            interactive: true,
+            trigger: 'click',
+            performance: true,
+            size: 'large',
+            duration: 200,
+        });
+    </script>
+    
+</body>
+
+</html>

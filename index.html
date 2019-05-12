@@ -34,10 +34,14 @@
     <div class="background-on"></div>
 
     <header>
+        <a class="text-logo" href="/">isikemre.de</a>
         <nav>
             <ul>
                 <li>
-                    <span class="tippy-me-about">About</span>
+                    <a href="projects.html">Projects</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
                 </li>
                 <li>
                     <span class="tippy-me-contact">Contact</span>
@@ -79,22 +83,6 @@
         </div>
     </section>
 
-    <div id="about-text" style="display: none;">
-        <h4>I think you already have noticed.</h4>
-        <h3 style="margin-top: -20px">My name is Emre Isik</h3>
-        
-        <p>
-            I was born in Germany, Mönchengladbach.<br>
-            And there I finished my school/education, before I moved to Turkey.
-            I always loved technologies and making something amazing with the computer.
-            When I was 7 years old, my dad bought me a Computer with Windows 2000 installed on it.
-            He bought me books about HTML & CSS. So I took the first step into this tech-world.<br><br>
-            
-            My first programming language was JavaScript. This was followed by PHP and lately Java.
-            Now I am learning C++ to understand things like the Mutex-Problem or other cool stuff. But I think, I will use this language sometime.
-        </p>
-    </div>
-
     <div id="contact-text" style="display: none;">
         <p>
             You can contact me via E-Mail.<br>
@@ -117,20 +105,7 @@
                 clearTimeout(hintTextScheduleId);
             });
         });
-
-        tippy('.tippy-me-about', {
-            content: document.getElementById('about-text').innerHTML,
-            delay: 100,
-            arrow: true,
-            allowHTML: true,
-            arrowType: 'round',
-            interactive: true,
-            trigger: 'click',
-            performance: true,
-            size: 'large',
-            duration: 200,
-        });
-
+        
         tippy('.tippy-me-contact', {
             content: document.getElementById('contact-text').innerHTML,
             delay: 100,

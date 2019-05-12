@@ -12,6 +12,40 @@ body {
     background: transparent;
 }
 
+h1 {
+    font-weight: 300;
+    font-size: 2.5rem;
+    word-wrap: break-word;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 1.7rem;
+}
+
+.weight-normal {
+    font-weight: normal;
+}
+
+.background-grey {
+    background-color: #0c0c0c;
+}
+
+a, a:visited {
+    color: white;
+    text-decoration: none;
+    word-wrap: break-word;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .background-off {
     position: absolute;
     display: block;
@@ -117,7 +151,7 @@ header nav ul li span:hover {
 }
 
 .trigger-light.show-hint {
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(240, 234, 234, 0.5);
 }
 
 .trigger-light:hover {
@@ -125,15 +159,97 @@ header nav ul li span:hover {
 }
 
 .trigger-light.show-hint::after {
-    content: 'You can hover this area 😊';
+    content: 'You can hover this area. Because my name means light 😊';
     transition: all 200ms;
     position: absolute;
     font-size: 12px;
     left: 0px;
-    bottom: -20px;
+    bottom: -40px;
     text-align: center;
     width: 100%;
 }
+
+.text-logo {
+    position: absolute;
+    left: 20px;
+    top: 35px;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+.section-projects {
+    margin-left: 20px;
+}
+
+.section-projects .project {
+    margin-bottom: 2em;
+}
+
+.section-projects .project .content {
+    display: flex;
+    flex-direction: row;
+}
+
+.section-projects .project .content > .images {
+    margin-right: 20px;
+    display: inline;
+}
+
+.section-projects .project .content > .images > .image:first-child {
+    padding-top: 0;
+}
+
+.section-projects .project .content > .images > .image {
+    width: 300px;
+    padding: 5px;
+    text-align: center;
+}
+
+.section-projects .project .content > .images > .image img {
+    width: 100%;
+}
+
+.section-projects .project .content > .text {
+    font-weight: 300;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-projects .project .content > .text p {
+    margin-top: 0;
+}
+
+.section-projects .project .content > .text > .skills-used {
+    font-size: 3em;
+    cursor: default;
+}
+
+.about-me-text {
+    max-width: 700px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.font-courier {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.used {
+    font-size: 18px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.image-desc {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
 
 @media only screen and (max-width: 768px) {
     .name {
@@ -145,12 +261,10 @@ header nav ul li span:hover {
         margin-top: 10px;
         font-size: 2.2rem;
     }
-    
     .subtitle {
         margin-left: 20px;
         font-size: 1.3rem;
     }
-
     .skills {
         bottom: 20%;
         font-size: 40px;
@@ -158,8 +272,18 @@ header nav ul li span:hover {
     .background-off {
         background-position: right 35% center;
     }
-    
     .background-on {
         background-position: right 35% center;
+    }
+    .section-projects .project .content {
+        display: flex;
+        flex-direction: column;
+    }
+    .section-projects .project .content > .images > .image {
+        width: 100%;
+        padding: 5px;
+    }
+    .section-projects {
+        margin: 0px 10px;
     }
 }
